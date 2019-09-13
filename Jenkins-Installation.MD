@@ -21,3 +21,17 @@ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 # Install Jenkins.
 sudo yum install -y jenkins
 ```
+
+# Building in Jenkins
+
+``` sh 
+# Create a folder named Test
+
+ In the dashboard click on create item, from there enter "Test" at the top of the page and then click "folder" and then "ok"
+
+
+ # Create a user test job that saves it output in a file "user_test.txt"
+
+in the folder you created, go to new item on the left, then name the item user_test and then click "freestyle build" and then "ok" In the job configuration page in the build step, click execute shell, then in the text box type uname -a && whoami > user_test.txt then click save.
+
+Then click build on the left, Then click workspace and locate the file, view the contets of the file by clicking view on the page. This should result in the username 'jenkins'
