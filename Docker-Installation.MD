@@ -10,9 +10,9 @@
 
 ## Install Docker Engine - Community
 
-- Configiure Docker repository and install from them. This is easy and recommended approach.
-- Download RPMs packages manually and install. This installation is recommended for systems without internet connections
-- Install using docker script
+- Configiure Docker **repository** and install from them. This is easy and recommended approach.
+- Download **RPMs packages** manually and install. This installation is recommended for systems without internet connections
+- Install using docker **script**
 
 ## Install using the repository
 
