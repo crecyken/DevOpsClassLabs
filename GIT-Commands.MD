@@ -1,4 +1,4 @@
-{% capture colOne %}
+
 ## Install Git
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
@@ -78,7 +78,7 @@ Records file snapshots permanently in version history
 
 ## Branch
 
-```A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.```
+``` sh A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.```
 
 ```The git branch command lets you create, list, rename, and delete branches. It doesn’t let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands.```
 
@@ -113,9 +113,9 @@ Delete not merged branch:
 
 ## Merge
 
-```Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch```
+``` sh Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch
 
-```Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches.```
+Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches.```
 
 True merge (fast forward):
 `git merge branchname`
