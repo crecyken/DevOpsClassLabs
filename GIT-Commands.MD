@@ -80,7 +80,7 @@ Records file snapshots permanently in version history
 
 ``` sh A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.```
 
-```The git branch command lets you create, list, rename, and delete branches. It doesn’t let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands.```
+``` sh The git branch command lets you create, list, rename, and delete branches. It doesn’t let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands.```
 
 **Commands:**
 
@@ -113,9 +113,9 @@ Delete not merged branch:
 
 ## Merge
 
-``` sh Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch
+``` sh Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.```
 
-Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches.```
+``` sh Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches.```
 
 True merge (fast forward):
 `git merge branchname`
@@ -140,11 +140,11 @@ Merge only one specific commit:
 
 ## Rebase
 
-```Rebase is one of two Git utilities that specializes in integrating changes from one branch onto another. The other change integration utility is git merge. Merge is always a forward moving change record. Alternatively, rebase has powerful history rewriting features.```
+``` sh Rebase is one of two Git utilities that specializes in integrating changes from one branch onto another. The other change integration utility is git merge. Merge is always a forward moving change record. Alternatively, rebase has powerful history rewriting features.```
 
 `What is git rebase?`
 
-```Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.```
+``` sh Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.```
 
 Rebase:
 `git checkout branchname` » `git rebase master`
@@ -167,7 +167,7 @@ Squash-merge a feature branch (as one commit):
 
 ## Stash
 
-`git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit`
+``` sh git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit```
 
 Put in stash:
 `git stash save "Message"`
