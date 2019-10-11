@@ -32,13 +32,15 @@ sudo yum install -y jenkins
 
  # Create a user test job that saves it output in a file "user_test.txt"
 
-in the folder you created, go to new item on the left, then name the item user_test and then click "freestyle build" and then "ok" In the job configuration page in the build step, click execute shell, then in the text box type uname -a && whoami > user_test.txt then click save.
+in the folder you created, go to new item on the left, then name the item user_test and then click **"freestyle build"** and then **"ok"** 
 
-Then click build on the left, Then click workspace and locate the file, view the contets of the file by clicking view on the page. This should result in the username 'jenkins'
+In the job configuration page in the build step, click **execute shell**, then in the text box type **uname -a && whoami > user_test.txt** then click **save**.
+
+Then click **build** on the left, Then click **workspace** and locate the file, view the contets of the file by clicking view on the page. This should result in the username 'jenkins'
 
 # Building from SCM
 
-``` sh 
+```sh 
 
 # Configure Maven Installer
 
@@ -62,10 +64,9 @@ Create a new Maven installation and set it to install automatically.
 
   Configure a build step to run the following go command:
 
-  ``` sh
+  ```sh
    bin/makeindex
-  
-   ```
+  ```
 
   Add a post-build step to archive the artifacts.
 
